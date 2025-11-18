@@ -29,17 +29,9 @@ A simple and lightweight weather plugin for Botble CMS that displays current wea
 
 1. Download the plugin and extract it to `platform/plugins/simple-weather`
 
-2. Run the following commands:
-```bash
-cd platform/plugins/simple-weather
-composer install
-npm install
-npm run dev
-```
+2. Activate the plugin in **Admin Panel → Plugins**
 
-3. Activate the plugin in **Admin Panel → Plugins**
-
-4. Configure settings in **Admin Panel → Settings → Simple Weather**
+3. Configure settings in **Admin Panel → Settings → Simple Weather**
 
 ## Configuration
 
@@ -53,8 +45,8 @@ Navigate to **Admin Panel → Settings → Simple Weather** to configure:
 
 #### Screenshot
 
-![Simple Weather Plugin Settings](art/settings-1.png)
-![Simple Weather Plugin Settings](art/settings-2.png)
+![Simple Weather Plugin Settings](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/settings-1.png)
+![Simple Weather Plugin Settings](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/settings-2.png)
 
 ### Shortcode Usage
 
@@ -106,16 +98,16 @@ Add weather widget to any page using the shortcode:
 ### Default Style
 Horizontal card layout showing current weather and forecast days side by side.
 #### Light
-![Default Style](art/default-light.png)
+![Default Style](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/default-light.png)
 #### Dark
-![Default Style](art/default-dark.png)
+![Default Style](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/default-dark.png)
 
 ### Widget Style
 Vertical compact layout with detailed information (humidity, clouds, wind speed).
 #### Light
-![Widget Style](art/widget-light.png)
+![Widget Style](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/widget-light.png)
 #### Dark
-![Widget Style](art/widget-dark.png)
+![Widget Style](https://raw.githubusercontent.com/rajaishtiaq6/simple-weather/main/art/widget-dark.png)
 
 ## Weather Icons
 
@@ -175,7 +167,7 @@ MIT License - Free to use for personal and commercial projects.
 
 ## Changelog
 
-### Version 1.0.0 (2024)
+### Version 1.0.0 (2025)
 - ✅ Initial release
 - ✅ Current weather and forecast display
 - ✅ Multiple display styles (default, widget)
@@ -188,5 +180,5 @@ MIT License - Free to use for personal and commercial projects.
 
 ---
 
-**Made with ❤️ for Botble CMS Community**
+**Made with ❤️ by Ishtiaq Ahmed for Botble CMS Community**
 
