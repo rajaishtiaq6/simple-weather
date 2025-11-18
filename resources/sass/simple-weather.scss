@@ -1,0 +1,240 @@
+// Import Weather Icons
+@import 'weather-icons';
+
+// Simple Weather Styles
+.simple-weather {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+
+    &__location {
+        width: 100%;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    &__day {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+        min-width: 100px;
+
+        &--current {
+            background: #007bff;
+            color: white;
+
+            .simple-weather__date {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+
+    &__date {
+        font-size: 0.875rem;
+        color: #6c757d;
+        font-weight: 500;
+    }
+
+    &__temp {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: normal;
+
+        &-min {
+            font-size: 1rem;
+            opacity: 0.7;
+            margin-left: 0.25rem;
+            font-style: normal;
+        }
+    }
+
+    .sw {
+        font-size: 2.5rem;
+    }
+
+    &__loading,
+    &__error {
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    &__loading {
+        background: #e3f2fd;
+        color: #1976d2;
+        border: 1px solid #90caf9;
+    }
+
+    &__error {
+        background: #ffebee;
+        color: #c62828;
+        border: 1px solid #ef9a9a;
+        font-weight: 500;
+    }
+
+    // Night Mode
+    &--night {
+        background: #1a1a2e;
+        color: #eee;
+        padding: 1.5rem;
+        border-radius: 12px;
+
+        .simple-weather__location {
+            color: #fff;
+        }
+
+        .simple-weather__day {
+            background: #16213e;
+            color: #eee;
+
+            &--current {
+                background: #0f3460;
+                color: #fff;
+            }
+        }
+
+        .simple-weather__date {
+            color: #aaa;
+        }
+
+        .simple-weather__temp {
+            color: #fff;
+        }
+
+        .simple-weather__loading {
+            background: #16213e;
+            color: #64b5f6;
+            border: 1px solid #0f3460;
+        }
+
+        .simple-weather__error {
+            background: #3d1f1f;
+            color: #ef5350;
+            border: 1px solid #c62828;
+        }
+
+        // Widget style in night mode
+        .simple-weather-widget {
+            background: #16213e;
+            color: #eee;
+        }
+
+        .widget_title {
+            color: #ffffff;
+        }
+
+        .temp .details {
+            color: #aaa;
+        }
+
+        .summary {
+            color: #ccc;
+        }
+    }
+}
+
+// Widget Style
+.simple-weather-widget {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+
+    &--bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+
+        .widget_title,
+        .details,
+        .summary {
+            color: white;
+        }
+    }
+
+    .widget_title {
+        margin: 0 0 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .temp {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .degrees {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .details {
+            flex: 1;
+            font-size: 0.875rem;
+
+            .float-right {
+                float: right;
+            }
+        }
+    }
+
+    .summary {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+}
+
+.simple-weather-table {
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__date {
+        flex: 1;
+        font-size: 0.875rem;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+    }
+
+    &__temp {
+        font-weight: 600;
+        min-width: 80px;
+        text-align: right;
+
+        &-min {
+            opacity: 0.6;
+            margin-left: 0.25rem;
+        }
+    }
+}
+
+// Error state
+.simple-weather .error {
+    color: #dc3545;
+    padding: 1rem;
+    background: #f8d7da;
+    border-radius: 4px;
+    display: block;
+}
+

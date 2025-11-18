@@ -1,0 +1,11 @@
+{
+    "id": "shaqi/simple-weather",
+    "name": "Simple Weather",
+    "namespace": "Shaqi\\SimpleWeather\\",
+    "provider": "Shaqi\\SimpleWeather\\Providers\\SimpleWeatherServiceProvider",
+    "author": "Ishtiaq Ahmed",
+    "url": "https://github.com/rajaishtiaq6",
+    "version": "1.0.0",
+    "description": "Simple Weather Plugin for Botble CMS"
+}
+
